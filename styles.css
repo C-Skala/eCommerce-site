@@ -9,4 +9,55 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: 'Segoe UI';
+    letter-spacing: 50;
+}
+
+.home{
+    background-image: url("images/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.product_image{
+    width: 275px;
+    height: 240px;
+}
+
+.hrproduct{
+    width: 30%;
+    border: 2px solid black;
+}
+
+.product_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hrtitle{
+    width: 50%;
+    border: 2px solid black;
+}
+
+.productlink{
+    color: #BF7631;
+
+}
+
+.atcbutton{
+    background-color: #BF7631;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border-color: #BF7631;
+}
+
+
+footer{
+    background-color:  #BF7631;
+    text-align: center;
+    padding: 0rem;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
