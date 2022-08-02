@@ -10,21 +10,25 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class = "headderlinks">
                 <li><a href = "#home">HOME</li></a>
                 <li><a href = "#about">ABOUT</li></a>
-                <li><a href = "#prooducts">PRODUCTS</li></a>
+                <li><a href = "#products">PRODUCTS</li></a>
                 <li><a href = "#contact">CONTACT</li></a>
             </ul>
         </nav>
-        <div>
+        <div class = "search_bar">
+            <input type = "text" id="search" name="search" value="">
+            <span><strong>CART (0)</strong></span>
+        
+        </div>
+        <div class = "toplogo">
                 <h3>CARA<img src ="images/icons8-pottery-96.png">CARA</h3>
         </div>
-        <div>
-                <input type = "text" id="search" name="search" value="">
-                <span><strong>CART (0)</strong></span>
-            
-        </div>
+        
+        <hr class = "hrheadder">
+        <br>
+        <br>
     </header>
     <MAIN>
         <section class = "home" id = "home">
@@ -41,213 +45,265 @@
         <section id = "about">
             <h2>ABOUT US</h2>
             <hr class = "hrtitle">
-            <img src="./images/Vase_Dame_2048x2048.jpg" alt="vase with single white rose"/>
-            <p1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero id
-                faucibus nisl tincidunt. Facilisis mauris sit amet massa. Senectus et netus et malesuada fames
-                ac turpis egestas maecenas. Odio aenean sed adipiscing diam donec adipiscing tristique
-                risus nec. Sagittis id consectetur purus ut faucibus. Elit duis tristique sollicitudin nibh sit
-                amet commodo
-            </p1>
-            <br>
-            <p2>
-                Nulla porttitor massa id neque aliquam
-                vestibulum morbi. Facilisi nullam vehicula
-                ipsum a arcu cursus vitae congue. Nam libero
-                justo laoreet sit amet cursus sit amet dictum.
-                Tristique magna sit amet purus gravida quis.
-                Velit euismod in pellentesque massa placerat.
-                In ante metus dictum at tempor commodo.
-                Libero nunc consequat interdum varius sit
-                amet mattis. Egestas sed sed risus pretium
-                quam vulputate dignissim. Diam phasellus
-                vestibulum lorem sed risus. Cursus sit amet
-                dictum sit amet justo donec enim.
-            </p2>
-            <br>
-            <img src="./images/Cylinder_unglazed3_2048x2048.jpg" alt="vase with hay leaning out of top"/>
-            <p3>
-                Tincidunt praesent semper feugiat nibh sed.
-                Vulputate mi sit amet mauris commodo quis
-                imperdiet massa. Amet tellus cras adipiscing
-                enim eu turpis egestas pretium aenean.
-                Nullam ac tortor vitae puru
-            </p3>
+            <div class = "about_us_info">
+                <div>
+                 <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero id
+                        faucibus nisl tincidunt. Facilisis mauris sit amet massa. Senectus et netus et malesuada fames
+                        ac turpis egestas maecenas. Odio aenean sed adipiscing diam donec adipiscing tristique
+                        risus nec. Sagittis id consectetur purus ut faucibus. Elit duis tristique sollicitudin nibh sit
+                        amet commodo
+                    </p>
+                </div> 
+                
+                <div>
+                    <img class = "about_image_one" src="./images/Vase_Dame_2048x2048.jpg" alt="vase with single white rose"/>
+                </div>
+                
+                <div>
+                    <p>
+                        Nulla porttitor massa id neque aliquam
+                        vestibulum morbi. Facilisi nullam vehicula
+                        ipsum a arcu cursus vitae congue. Nam libero
+                        justo laoreet sit amet cursus sit amet dictum.
+                        Tristique magna sit amet purus gravida quis.
+                        Velit euismod in pellentesque massa placerat.
+                        In ante metus dictum at tempor commodo.
+                        Libero nunc consequat interdum varius sit
+                        amet mattis. Egestas sed sed risus pretium
+                        quam vulputate dignissim. Diam phasellus
+                        vestibulum lorem sed risus. Cursus sit amet
+                        dictum sit amet justo donec enim.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Tincidunt praesent semper feugiat nibh sed.
+                        Vulputate mi sit amet mauris commodo quis
+                        imperdiet massa. Amet tellus cras adipiscing
+                        enim eu turpis egestas pretium aenean.
+                        Nullam ac tortor vitae puru
+                    </p>
+                </div>
+                </div>  
+                    <div>
+                        <img class = "about_image_two" src="./images/Cylinder_unglazed3_2048x2048.jpg" alt="vase with hay leaning out of top"/>
+                    </div>
+            </div>
         </section>
-        <section id = "prooducts">
+        <section id = "products">
             <h3>OUR PRODUCTS</h3>
             <hr class = "hrtitle">
             <div class = "product_container">
                 <div class = 'MUNDO BOWLS'>
-                    <a><img  class = "product_image" src="./images/tom-crew-7HuTGlUfQSo-unsplash.jpg" alt="one large white bowl and 2 smaller white bowls"/></a>
+                    <a><button class = "productimagebut" type= "button" href="productpage.com"><img  class = "product_image" src="./images/tom-crew-7HuTGlUfQSo-unsplash.jpg" alt="one large white bowl and 2 smaller white bowls"/></button></a>
                     <br>
                     <strong>MUNDO BOWLS</strong>
                     <span>$48.00</span>
                     <hr class = "hrproduct">
-                    <P3>
+                    <div class="product_description">
+                        <P3 >
                         Tincidunt praesent semper feugiat nibh
                         sed. Vulputate mi sit amet mauris
                         commodo quis imperdiet massa. Amet
                         tellus cras adipiscing enim eu turpis
                         egestas pretium aenean.
-                    </P3>
+                        </P3>
+                      <br>
                     <a class = "productlink"href="productpage.com">LEARN MORE</a>
-                    <span><button class = "atcbutton" type= "button">ADD TO CART</button></span>
-                    
+                    <span><button class = "atcbutton" type= "button">ADD TO CART</button></span>   
+                    </div>
                 </div>
                 <div class = 'Natureza Vase'>
-                    <a><img class = "product_image" src="./images/tom-crew-3uwu5K0RtaE-unsplash.jpg" alt="red vase with long neck"/></a>
+                    <a><button class = "productimagebut" type= "button"><img class = "product_image" src="./images/oriento-maVIpNNtmlQ-unsplash.jpg" alt="red vase with long neck"/></button></a>
                     <br>
                     <strong>NATUREZA VASE</strong>
                     <span>$37.00</span>
                     <hr class = "hrproduct">
-                    <P3>
+                    <div class="product_description">
+                        <P3 >
                         Tincidunt praesent semper feugiat nibh
                         sed. Vulputate mi sit amet mauris
                         commodo quis imperdiet massa. Amet
                         tellus cras adipiscing enim eu turpis
                         egestas pretium aenean.
-                    </P3>
-                    <a class = "productlink" href="productpage.com">LEARN MORE</a>
-                    <span><button class = "atcbutton"type= "button">ADD TO CART</button></span>
+                        </P3>
+                        <br>
+                        <a class = "productlink" href="productpage.com">LEARN MORE</a>
+                        <span><button class = "atcbutton"type= "button">ADD TO CART</button></span>
+                    </div>
                 </div>
                 <div class = 'Feira Bowls'>
-                    <a><img class = "product_image" src="./images/tom-crew-bgIO-u4GEfI-unsplash.jpg" alt="2 small white bowls with one resting in the other"/></a>
+                    <a><button class = "productimagebut" type= "button"><img class = "product_image" src="./images/tom-crew-bgIO-u4GEfI-unsplash.jpg" alt="2 small white bowls with one resting in the other"/></button></a>
                     <br>
                     <strong>FIERA BOWLS</strong>
                     <span>$29.00</span>
                     <hr class = "hrproduct">
-                    <P3>
+                    <div class="product_description">
+                        <P3 >
                         Tincidunt praesent semper feugiat nibh
                         sed. Vulputate mi sit amet mauris
                         commodo quis imperdiet massa. Amet
                         tellus cras adipiscing enim eu turpis
                         egestas pretium aenean.
-                    </P3>
+                        </P3>
+                     <br>
                     <a class = "productlink" href="productpage.com">LEARN MORE</a>
                     <span><button class = "atcbutton"type= "button">ADD TO CART</button></span>
+                </div>
+                   
                     
                 </div>
                 <div class = 'natureza Pots'>
-                    <a><img class = "product_image" src="./images/tom-crew-3uwu5K0RtaE-unsplash.jpg" alt="2 JARS ONE WITH LID OFF"/></a>
+                    <a><button class = "productimagebut" type= "button"><img class = "product_image" src="./images/tom-crew-3uwu5K0RtaE-unsplash.jpg" alt="2 JARS ONE WITH LID OFF"/></button></a>
                     <br>
                     <strong>NATUREZA POTS</strong>
                     <span>$59.00</span>
                     <hr class = "hrproduct">
-                    <P3>
+                    <div class="product_description">
+                        <P3 >
                         Tincidunt praesent semper feugiat nibh
                         sed. Vulputate mi sit amet mauris
                         commodo quis imperdiet massa. Amet
                         tellus cras adipiscing enim eu turpis
                         egestas pretium aenean.
-                    </P3>
+                        </P3>
+                    <br>
                     <a class = "productlink" href="productpage.com">LEARN MORE</a>
                     <span><button class = "atcbutton"type= "button">ADD TO CART</button></span>
                 </div>
+                    
+                </div>
                 <div class = 'Pedra Vase'>
-                    <a><img class = "product_image" src="./images/linh-le-a0rE64YJDA4-unsplash.jpg" alt="SMALL VASE WITH STEAM HANGING OUT"/></a>
+                    <a><button class = "productimagebut" type= "button"><img class = "product_image" src="./images/linh-le-a0rE64YJDA4-unsplash.jpg" alt="SMALL VASE WITH STEAM HANGING OUT"/></button></a>
                     <br>
                     <strong>PEDRA VASE</strong>
                     <span>$31.00</span>
                     <hr class = "hrproduct">
-                    <P3>
+                    <div class="product_description">
+                        <P3 >
                         Tincidunt praesent semper feugiat nibh
                         sed. Vulputate mi sit amet mauris
                         commodo quis imperdiet massa. Amet
                         tellus cras adipiscing enim eu turpis
                         egestas pretium aenean.
-                    </P3>
+                        </P3>
+                    <br>
                     <a class = "productlink" href="productpage.com">LEARN MORE</a>
                     <span><button class = "atcbutton"type= "button">ADD TO CART</button></span>
                 </div>
+                    
+                </div>
                 <div class = 'Viaja Pots'>
-                    <a><img  class = "product_image" src="./images/tom-crew-oiZAQvxTcYQ-unsplash.jpg" alt="GRET/WHITE JARS ONE WITH LID OFF"/></a>
+                    <a><button class = "productimagebut" type= "button"><img  class = "product_image" src="./images/tom-crew-oiZAQvxTcYQ-unsplash.jpg" alt="GRET/WHITE JARS ONE WITH LID OFF"/></button></a>
                     <br>
                     <strong>VIAJA POTS</strong>
                     <span>$57.00</span>
                     <hr class = "hrproduct">
-                    <P3>
+                    <div class="product_description">
+                        <P3 >
                         Tincidunt praesent semper feugiat nibh
                         sed. Vulputate mi sit amet mauris
                         commodo quis imperdiet massa. Amet
                         tellus cras adipiscing enim eu turpis
                         egestas pretium aenean.
-                    </P3>
+                        </P3>
+                    <br>
                     <a class = "productlink" href="productpage.com">LEARN MORE</a>
                     <span><button class = "atcbutton"type= "button">ADD TO CART</button></span>
+                </div>
+                    
                     
                 </div>
                 <div class = 'Servico PLates'>
-                    <a><img class = "product_image" src="./images/tom-crew-YA2E3d7a9Wo-unsplash.jpg" alt="3 PLATES STACKED BEHIND A SINGLE WHITE PLATE"/></a>
+                    <a><button class = "productimagebut" type= "button"><img class = "product_image" src="./images/tom-crew-YA2E3d7a9Wo-unsplash.jpg" alt="3 PLATES STACKED BEHIND A SINGLE WHITE PLATE"/></button></a>
                     <br>
                     <strong>SERVIÇO PLATES</strong>
                     <span>$35.00</span>
                     <hr class = "hrproduct">
-                    <P3>
+                    <div class="product_description">
+                        <P3 >
                         Tincidunt praesent semper feugiat nibh
                         sed. Vulputate mi sit amet mauris
                         commodo quis imperdiet massa. Amet
                         tellus cras adipiscing enim eu turpis
                         egestas pretium aenean.
-                    </P3>
+                        </P3>
+                    <br>
                     <a class = "productlink" href="productpage.com">LEARN MORE</a>
                     <span><button class = "atcbutton"type= "button">ADD TO CART</button></span>
                 </div>
+                    
+                </div>
                 <div class = 'compeao Vase'>
-                    <a><img class = "product_image" src="./images/oriento-l0ah3UBLppo-unsplash.jpg" alt="BLUE VASE WITH LING NECK"/></a>
+                    <a><button class = "productimagebut" type= "button"><img class = "product_image" src="./images/oriento-l0ah3UBLppo-unsplash.jpg" alt="BLUE VASE WITH LING NECK"/></button></a>
                     <br>
                     <strong>CAMPEÃO VASE</strong>
                     <span>$37.00</span>
                     <hr class = "hrproduct">
-                    <P3>
+                    <div class="product_description">
+                        <P3 >
                         Tincidunt praesent semper feugiat nibh
                         sed. Vulputate mi sit amet mauris
                         commodo quis imperdiet massa. Amet
                         tellus cras adipiscing enim eu turpis
                         egestas pretium aenean.
-                    </P3>
+                        </P3>
+                    <br>
                     <a class = "productlink" href="productpage.com">LEARN MORE</a>
                     <span><button class = "atcbutton"type= "button">ADD TO CART</button></span>
+                </div>
+                    
                     
                 </div>
                 <div class = 'Troca Bowls'>
-                    <a><img class = "product_image" src="./images/tom-crew-SITGdvztUdg-unsplash.jpg" alt="2 STACKS OF WHITE BOWLS"/></a>
+                    <a><button class = "productimagebut" type= "button"><img class = "product_image" src="./images/tom-crew-SITGdvztUdg-unsplash.jpg" alt="2 STACKS OF WHITE BOWLS"/></button></a>
                     <br>
                     <strong>TROCA BOWLS</strong>
                     <span>$25.00</span>
                     <hr class = "hrproduct">
-                    <P3>
+                    <div class="product_description">
+                        <P3 >
                         Tincidunt praesent semper feugiat nibh
                         sed. Vulputate mi sit amet mauris
                         commodo quis imperdiet massa. Amet
                         tellus cras adipiscing enim eu turpis
                         egestas pretium aenean.
-                    </P3>
+                        </P3>
+                    <br>
                     <a class = "productlink" href="productpage.com">LEARN MORE</a>
                     <span><button class = "atcbutton"type= "button">ADD TO CART</button></span>
+                </div>
+                    
                 </div>
             </div>
         </section>
         <section id = "contact">
             <H4>CONTACT US</H4>
-            <P2>EMAIL
+            <P2 class = "email">EMAIL
                 <input type = "text" id="EMAIL" name="EMAIL" value="">
             </P2>
-            <P3>MESSAGE
-                <input type = "text" id="MESSAGE" name="MESSAGE" value="">
-            </P3>
+            <label class="message">MESSAGE</label>
+            <textarea id="message" name="message" placeholder=""></textarea>
         </section>
     </MAIN>
     <footer>
-        <img src="./images/icons8-youtube-96.png" alt = "YOUTUBE LINK" />
-        <img src="./images/icons8-facebook-96 (1).png" alt = "FACEBOOK LINK" />
+        <div class = "footer_icons_left">
+            <img src="./images/icons8-youtube-96.png" alt = "YOUTUBE LINK" />
+            <img src="./images/icons8-facebook-96 (1).png" alt = "FACEBOOK LINK" />
+        </div>
+        <div class = "footer_icons_right">
+            <img src="./images/icons8-twitter-96.png" alt = "TWITTER LINK" />
+            <img src="./images/icons8-instagram-96.png" alt = "INSTAGRAM LINK" />
+        </div>
+        <div class = "logo_bottom">
         <h3>CARA<img src ="images/icons8-pottery-96 (1).png">CARA</h3>
-        <img src="./images/icons8-twitter-96.png" alt = "TWITTER LINK" />
-        <img src="./images/icons8-instagram-96.png" alt = "INSTAGRAM LINK" />
+        </div>
         <P3>Pretium nibh ipsum consequat nisl vel pretium.</P3>
         <P4>Amet tellus cras adipiscing enim eu turpis.</P4>
-        <P5>©Copyright 2015 - 2020</P5>
+        <P5 class ="coppyright">©Copyright 2015 - 2020</P5>
     </footer>    
 </body>
 </html>
